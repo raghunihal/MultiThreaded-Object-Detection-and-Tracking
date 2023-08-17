@@ -3,7 +3,7 @@
 #include <string>
 #include "frame_grabber.h"
 #include "yolov3v4_object_detector.h"
-//#include "yolov5_object_detector.h"
+#include "yolov5_object_detector.h"
 #include "frame_writer.h"
 #include "object_tracker.h"
 #include <tbb/concurrent_queue.h>
@@ -23,13 +23,9 @@ int main()
 
     // load input video path
     //std::string video_input = "../videos/input_video.mp4";
-    //std::string video_input1 = "rtsp://service:pssw0rd@172.196.129.152:554/ufirststream?inst=2";
-    std::string video_input1 = "rtsp://172.196.128.151:554/1/h264minor";    
-    //std::string video_input1 = "rtsp://admin:admin@172.196.128.227:554/videoinput_1:0/mjpeg_3/media.stm";
-    //std::string video_input1 = "rtsp://admin:admin@172.196.128.227:554/videoinput_1:0/h264_1/media.stm";    
-    //std::string video_input2 = "rtsp://admin:admin@172.196.128.227:554/videoinput_2:0/mjpeg_3/media.stm";
-    
-
+   // RTSP Link
+    std::string video_input1 = "rtsp://xx.xx.xx.xx:554/1/h264minor";    
+   
     // load output video path
     std::string video_output1 = "../videos/project_detect.avi";
     std::string video_output2 = "../videos/project_detect2.avi";
@@ -62,8 +58,6 @@ int main()
     // PTZController ptz(buff);
     // PTZController ptz2(buff);
     // ptz.getToken();
-    
-
    
     if(TVflag)
     {
