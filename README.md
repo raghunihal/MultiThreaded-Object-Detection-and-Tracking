@@ -15,4 +15,4 @@ Tracking consist of two major steps:
 1. Prediction: Predict the object locations in the next frame.
 2. Data association: Use the predicted locations to associate detections across frames to form tracks.
 
-# Red dot on the objects shows the tracking and the green dot shows the position measured by detecting the object and calculating center of bounding box.
+Red dot on the objects shows the tracking and the green dot shows the position measured by detecting the object and calculating center of bounding box.
